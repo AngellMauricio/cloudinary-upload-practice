@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Practice - Angel Hernandez</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="upload-container">
+        <h2>Práctica de APIs</h2>
+        <p class="subtitle">Servicio de almacenamiento Cloudinary</p>
+
+        <section class="file-input-group">
+            <input type="file" id="fileInput" accept="image/*">
+        </section>
+
+        <button id="btnSubir" class="btn-upload" onclick="subirimgen()">
+            Subir a Cloudinary
+        </button>
+
+        <div id="cargando" class="hidden" style="margin-top: 1rem; color: #6366f1; font-weight: bold;">
+            ⌛ Subiendo archivo, por favor espera...
+        </div>
+
+        <section id="resultContainer" class="result-container" style="display: block;">
+            <h3>Resultado Transformado:</h3>
+            <img id="imagen" src="" alt="Previsualización de imagen">
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
