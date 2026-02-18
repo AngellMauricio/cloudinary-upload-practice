@@ -51,11 +51,12 @@ const subirimgen = () => {
         .catch(error => {
             // captura de errores
             console.error("Mi error:", error);
-            alert("Algo salió mal en la subida.");
+            alert("Error al subir la imagen");
         })
         .finally(() => {
             //Se vuelve a activar el boton
             btnSubir.disabled = false;
             cargandoText.classList.add("hidden");
         });
+
 }
